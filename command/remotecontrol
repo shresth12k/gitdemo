@@ -1,0 +1,13 @@
+
+//invoker 
+public class RemoteControl{
+    private command Command;
+
+    public RemoteControl (Command command) {
+        this.Command = Command;
+    }
+
+    public void pressButton(){
+        command.execute();
+    }
+}
